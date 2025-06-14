@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Michael Learnstorock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/loki-cola" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('b3.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #050828;
+      padding: 2rem 1rem;
+      text-align: center;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+
+    header.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    header h1 {
+      font-family: 'Loki Cola', sans-serif;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: gradientMove 5s ease infinite;
+    }
+
+    nav {
+      background: #050828;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-weight: 500;
+      animation: gradientMove 5s ease infinite;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-in-out;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      font-family: 'Loki Cola', sans-serif;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: gradientMove 5s ease infinite;
+      text-align: center;
+    }
+
+    section p {
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: gradientMove 5s ease infinite;
+      margin: 1rem 0;
+    }
+
+    .profile-img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 3px solid #90caf9;
+    }
+
+    .languages-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .language-icon {
+      text-align: center;
+      width: 80px;
+    }
+
+    .language-icon img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .language-icon img:hover {
+      transform: scale(1.2);
+    }
+
+    .language-icon span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #050828;
+      color: #ccc;
+      margin-top: 2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-in-out;
+    }
+
+    footer.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+      100% { background-position: 0% center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Michael Learnstorock</h1>
+    <h1>About me</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Who I Am</h2>
+    <img src="developer.jpg" alt="Michael Learnstorock" class="profile-img">
+    <p>I'm a web and software developer based in Mombasa, Kenya. With a deep passion for building impactful digital solutions, I blend creativity and logic to develop high-quality web applications.</p>
+    <p>I am skilled in both front-end and back-end technologies, with hands-on experience in HTML, CSS, JavaScript, PHP, MySQL, Java, and Python. I have a strong sense of design, user experience, and coding best practices.</p>
+  </section>
+
+  <section>
+    <h2>Languages I Know</h2>
+    <div class="languages-grid">
+      <div class="language-icon">
+        <img src="https://cdn.simpleicons.org/html5/FF6C37" alt="HTML">
+        <span>HTML</span>
+      </div>
+      <div class="language-icon">
+        <img src="css.png" alt="CSS">
+        <span>CSS</span>
+      </div>
+      <div class="language-icon">
+        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="language-icon">
+        <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP">
+        <span>PHP</span>
+      </div>
+      <div class="language-icon">
+        <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL">
+        <span>MySQL</span>
+      </div>
+      <div class="language-icon">
+        <img src="java.webp" alt="Java">
+        <span>Java</span>
+      </div>
+      <div class="language-icon">
+        <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+        <span>Python</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>My coding journey</h2>
+    <p><b>My Coding Journey: Mastering Development & Cybersecurity</b></p>
+    <p>My journey into coding started with a fascination for how digital systems operate, leading me to explore the fundamentals of web development through HTML, CSS, and JavaScript.</p>
+    <p>As my skills grew, I expanded into back-end development, database management, and crafting dynamic web applications.</p>
+    <p>My passion for technology didn’t stop at web development, soon I ventured into Java and Python, mastering their capabilities for building scalable applications, automating tasks, and solving complex problems with efficient code.</p>
+    <p>Recognizing the importance of digital security, I deepened my knowledge in cybersecurity and ethical hacking, learning to identify vulnerabilities, fortify systems, and protect data from malicious threats.</p>
+    <p>With expertise in penetration testing and security strategies, I'm committed to ensuring safe and secure digital environments.</p>
+    <p>From designing powerful web applications to safeguarding systems against cyber threats, my coding journey is a testament to continuous learning, problem-solving, and the drive to create secure and innovative digital solutions.</p>
+  </section>
+
+  <section>
+    <h2>Experience and achievements</h2>
+    <p>I have built a strong foundation in web software development, Java, Python, cybersecurity, and ethical hacking, applying my expertise to create efficient and secure digital solutions.</p>
+    <p>With hands-on experience in front-end and back-end development, I have successfully designed dynamic web applications that prioritize usability and performance.</p>
+    <p>My journey in cybersecurity and ethical hacking has allowed me to identify vulnerabilities, strengthen systems, and enhance data protection strategies.</p>
+    <p>Throughout my career, I have tackled complex coding challenges, contributed to innovative tech projects, and continuously expanded my skill set through certifications and collaborative learning.</p>
+    <p>My commitment to problem-solving, security, and cutting-edge technology makes me a valuable asset in the ever-evolving digital landscape.</p>
+
+  </section>
+
+  <section>
+    <h2>Passion and interest</h2>
+    <p>My passion for technology is fueled by a deep curiosity to explore, innovate, and solve complex problems through code.</p>
+    <p>My interest spans across web software development, cybersecurity, ethical hacking, Java, and Python, allowing me to build efficient, secure, and scalable digital solutions.</p> 
+    <p>Beyond coding, I'm drawn to the ever-evolving world of tech, continuously learning about emerging trends, frameworks, and security advancements.</p> 
+    <p>I thrive on tackling challenges, optimizing systems, and creating impactful digital experiences that enhance usability and security.</p> 
+    <p>Whether designing intuitive web applications or safeguarding data from cyber threats, my enthusiasm for technology drives me to push boundaries and embrace innovation.</p>
+
+  </section>
+
+  <section>
+    <h2>Personal touch</h2>
+    <p>I'm not just a tech enthusiast, but also a curious explorer, creative thinker, and passionate learner who thrives on discovery.</p>
+    <p>Beyond coding and cybersecurity, I have a deep love for traveling, meeting new people, drawing, and exploring new places, always eager to immerse myself in different cultures and perspectives.</p>
+    <p>My adventurous spirit fuels the desire to learn, adapt, and innovate, whether through technology or life experiences.</p>
+    <p>I believe that every interaction and journey brings fresh knowledge, shaping my approach to problem-solving and creativity.</p>
+    <p>Whether crafting digital solutions or touring exciting destinations, I embrace the world with an open mind, ready to connect, create, and grow.</p>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Michael Learnstorock | About me. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, header, footer').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

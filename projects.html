@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Michael Learnstorock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/loki-cola" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #181041;
+      color: #e0e0e0;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: #181041;
+    }
+
+    header h1 {
+      font-family: 'Loki Cola', sans-serif;
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradientMove 5s ease infinite;
+    }
+    nav {
+      background: #181041;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-weight: 500;
+      animation: gradientMove 5s ease infinite;
+      text-decoration: none;
+    }
+
+    .projects-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .project-card {
+      background-color: #2e2b2b;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(233, 170, 159, 0.916);
+      border-left: 5px solid;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: gradientMove 5s ease infinite;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+      100% { background-position: 0% center; }
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #050828;
+      color: #ccc;
+      
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#projects">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="projects-container">
+    <div class="project-card" style="border-color: #ff6ec4;">
+      <img src="ebook.jpeg" alt="Project 1">
+      <h3>Online Bookstore</h3>
+      <p>A complete e-commerce platform developed using PHP and MySQL for managing book sales.</p>
+    </div>
+    <div class="project-card" style="border-color: #1dd1a1;">
+      <img src="portfolio.png" alt="Project 2">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio to showcase projects, resume, and contact details using HTML, CSS and JS.</p>
+    </div>
+    <div class="project-card" style="border-color: #7873f5;">
+      <img src="weather.jpg" alt="Project 3">
+      <h3>Weather App</h3>
+      <p>A weather forecasting app using an open weather API with real-time data and location input.</p>
+    </div>
+    <div class="project-card" style="border-color: #ff9f43;">
+      <img src="blogcms.webp" alt="Project 4">
+      <h3>Blog CMS</h3>
+      <p>A content management system for blogging with admin dashboard, post editor and comment system.</p>
+    </div>
+    <div class="project-card" style="border-color: #e510ec;">
+        <img src="trackingphysical.png" alt="Project 4">
+        <h3>Wellness-tracker</h3>
+        <p>A digital tool designed to monitor and analyze health metrics, lifestyle habits, and overall well-being to promote better self-care and personal wellness.
+        </p>
+      </div>
+      <div class="project-card" style="border-color: #d43512;">
+        <img src="hospital.jpg" alt="Project 4">
+        <h3>GuardianHealth</h3>
+        <p>A comprehensive software solution designed to streamline administrative, clinical, and financial operations in healthcare facilities, ensuring efficient patient care and resource management</p>
+      </div>
+      
+  </section>
+  <footer>
+    <p>&copy; 2025 Michael Learnstorock | projects. All rights reserved.</p>
+  </footer>
+</body>
+</html>

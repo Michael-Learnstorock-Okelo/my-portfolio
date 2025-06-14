@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Michael Learnstorock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/loki-cola" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('b3.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #050828;
+      padding: 2rem 1rem;
+      text-align: center;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+
+    header.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    header h1 {
+      font-family: 'Loki Cola', sans-serif;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: gradientMove 5s ease infinite;
+    }
+
+    nav {
+      background: #050828;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a, p {
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-weight: 500;
+      animation: gradientMove 5s ease infinite;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-in-out;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      font-family: 'Loki Cola', sans-serif;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #1dd1a1);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: gradientMove 5s ease infinite;
+      text-align: center;
+    }
+
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .icon {
+      text-align: center;
+      width: 90px;
+    }
+
+    .icon a {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .icon a:hover {
+      transform: scale(1.2);
+    }
+
+    .icon img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .icon span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #050828;
+      color: #ccc;
+      margin-top: 2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-in-out;
+    }
+
+    footer.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+      100% { background-position: 0% center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact @Michael Learnstorock</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Lets connect and innovate together!</h2>
+    <p>Are you looking for a skilled web software developer with expertise in Java, Python, cybersecurity, and ethical hacking? Whether it's developing secure and efficient digital solutions, optimizing web applications, or discussing the latest trends in tech, I’m always ready to collaborate and explore new opportunities.</p>
+    <p>Let’s build something impactful! Feel free to reach out to discuss projects, share insights, or connect over tech, travel, and creative ideas. Together, we can shape the future of innovation!</p>
+
+  </section>
+    <section>
+    <h2>Connect With Me👇</h2>
+    <div class="social-icons">
+      <div class="icon">
+        <a href="https://wa.me/0741231974" target="_blank">
+          <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp">
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://github.com/Michael-Learnstorock-Okelo" target="_blank">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+          <span>GitHub</span>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://twitter.com/@Learnstorock_KE" target="_blank">
+          <img src="x.png" alt="Twitter">
+          <span>Twitter(X)</span>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://facebook.com/Michael Learnsorock Okelo" target="_blank">
+          <img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://instagram.com/learn_storock" target="_blank">
+          <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://tiktok.com/@learnstorock" target="_blank">
+          <img src="https://cdn.simpleicons.org/tiktok/000000" alt="TikTok">
+          <span>TikTok</span>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="mailto:learnstorock8@gmail.com" target="_blank">
+          <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail">
+          <span>Gmail</span>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="tel:0741231974" target="_blank">
+          <img src="phone.webp" alt="Phone">
+          <span>Phone</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Michael Learnstorock. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, header, footer').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
